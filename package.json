@@ -1,0 +1,31 @@
+{
+  "name": "cpu-count",
+  "version": "0.1.0",
+  "description": "testing",
+  "main": "index.node",
+  "scripts": {
+    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+    "build-debug": "npm run build --",
+    "build-release": "npm run build -- --release",
+    "install": "npm run build-release",
+    "test": "cargo test"
+  },
+  "author": "@mwyatt896",
+  "license": "MIT",
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwyatt896/neon_hw.git"
+  },
+  "keywords": [
+    "neon",
+    "js",
+    "rust"
+  ],
+  "bugs": {
+    "url": "https://github.com/mwyatt896/neon_hw/issues"
+  },
+  "homepage": "https://github.com/mwyatt896/neon_hw#readme"
+}
